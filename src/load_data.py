@@ -1,5 +1,5 @@
 """
-data_loader.py
+load_data.py
 
 This module provides a class to load data from a PostgreSQL database, clean it by handling missing values and duplicates,
 and return the cleaned DataFrame.

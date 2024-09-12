@@ -3,9 +3,9 @@ import psycopg2
 # Establish connection to PostgreSQL
 conn = psycopg2.connect(
     host="localhost",
-    database="postgres",
+    database="telecom_customer_intelligence_hub",
     user="postgres",
-    password="secPost#1"
+    password="123"
 )
 
 # Create a cursor object

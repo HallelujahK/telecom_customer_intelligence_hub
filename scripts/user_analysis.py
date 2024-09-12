@@ -42,7 +42,7 @@ def main():
     # Univariate analysis
     print("\nUnivariate Analysis:")
     print(user_eda.univariate_analysis())
-    user_overview.graphical_univariate_analysis()
+    user_eda.graphical_univariate_analysis()
 
     # Bivariate analysis
     print("\nBivariate Analysis:")

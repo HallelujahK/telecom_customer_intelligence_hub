@@ -1,12 +1,11 @@
 # telecom_customer_intelligence_hub
-
 A client is interested in purchasing TellCo, an existing mobile service provider in the Republic of Pefkakia. TellCo’s current owners have been willing to share their financial information but have never employed anyone to look at the data that is generated automatically by their systems.
 
 The objective is to provide the client a report to analyse opportunities for growth and make a recommendation on whether TellCo is worth buying or selling.
 
 Table of Contents
 Installation
-Project Structure
+Project Structure 
 Usage
 Exploratory Data Analysis (EDA) Overview
 Data Cleaning

@@ -20,7 +20,7 @@ def main():
     cleaned_df = loader.clean_data(df)
 
     # Create UserOverview and UserEngagement objects
-    user_overview = UserOverview(cleaned_df)
+    user_eda = UserOverview(cleaned_df)
     user_engagement = UserEngagement(cleaned_df)
 
     # User Overview Analysis
@@ -28,34 +28,34 @@ def main():
     
     # Describe dataset
     print("\nDataset Description:")
-    print(user_overview.describe_dataset())
+    print(user_eda.describe_dataset())
 
     # Plot top handsets and manufacturers
-    user_overview.plot_top_handset_types()
-    user_overview.plot_top_handset_manufacturers()
-    user_overview.plot_top_handsets_per_manufacturer()
+    user_eda.plot_top_handset_types()
+    user_eda.plot_top_handset_manufacturers()
+    user_eda.plot_top_handsets_per_manufacturer()
 
     # Decile analysis
     print("\nTop 5 Deciles by Total Data:")
-    print(user_overview.segment_and_compute_decile())
+    print(user_eda.segment_and_compute_decile())
 
     # Univariate analysis
     print("\nUnivariate Analysis:")
-    print(user_overview.univariate_analysis())
+    print(user_eda.univariate_analysis())
     user_overview.graphical_univariate_analysis()
 
     # Bivariate analysis
     print("\nBivariate Analysis:")
-    bivariate_results = user_overview.bivariate_analysis()
+    bivariate_results = user_eda.bivariate_analysis()
     print("Correlation Matrix:")
     print(bivariate_results['correlation_matrix'])
 
     # Plot correlation matrix
-    user_overview.plot_correlation_matrix()
+    user_eda.plot_correlation_matrix()
 
     # PCA analysis
     print("\nPCA Analysis:")
-    pca_results = user_overview.pca_analysis()
+    pca_results = user_eda.pca_analysis()
     print("Explained Variance Ratio:")
     print(pca_results['explained_variance'])
     print("\nPCA Loadings:")
